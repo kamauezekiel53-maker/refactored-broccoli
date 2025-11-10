@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ezekiel — Animated Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Basic SEO -->
+  <meta name="description" content="Ezekiel — Animated developer portfolio (HTML + CSS). Built with neon gradients, smooth animations, and responsive layout.">
+</head>
+<body>
+
+  <!-- Page wrapper -->
+  <div class="page">
+
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="#hero">Ezekiel</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <h1 class="hero-title">Hi, I'm <span class="accent">Ezekiel</span> 👋</h1>
+        <p class="hero-sub">A creative web developer — I build animated, responsive, and modern interfaces.</p>
+
+        <div class="hero-ctas">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- decorative floating blobs -->
+      <div aria-hidden="true" class="blobs">
+        <span class="blob blob-1"></span>
+        <span class="blob blob-2"></span>
+        <span class="blob blob-3"></span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="max-w">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <img class="profile" src="https://ui-avatars.com/api/?name=Ezekiel+Kamau&background=8b5cf6&color=fff&size=512" alt="Ezekiel — profile avatar">
+          <div>
+            <p class="lead">
+              I'm Ezekiel, a front-end developer who loves crafting smooth, interactive web experiences.
+              I focus on performant UI, delightful micro-interactions, and clean, maintainable code.
+            </p>
+            <ul class="about-list">
+              <li><strong>Location:</strong> Nairobi, Kenya</li>
+              <li><strong>Stack:</strong> HTML, CSS, JavaScript, React (optional), Framer Motion (optional)</li>
+              <li><strong>Available:</strong> Freelance / Collaboration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="max-w">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">React</div>
+          <div class="skill-card">Tailwind / Utility CSS</div>
+          <div class="skill-card">Framer Motion</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="max-w">
+        <h2 class="section-title">Projects</h2>
+        <p class="muted">A selection of recent works — hover any card to reveal details and glow.</p>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <figure class="thumb">
+              <img src="https://images.unsplash.com/photo-1523475496153-3d6ccf6f0f04?w=1200&q=60&auto=format&fit=crop" alt="Neon portfolio screenshot">
+            </figure>
+            <div class="project-body">
+              <h3>Neon Portfolio</h3>
+              <p class="muted">Animated portfolio showcasing neon gradients, smooth scroll, and micro-interactions.</p>
+              <a class="card-btn" href="https://github.com/kamauezekiel53-maker" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <figure class="thumb">
+              <img src="https://images.unsplash.com/photo-1526378728825-5d2f2f5e1f13?w=1200&q=60&auto=format&fit=crop" alt="E-commerce UI screenshot">
+            </figure>
+            <div class="project-body">
+              <h3>SmartShop UI</h3>
+              <p class="muted">Responsive e-commerce front-end with animated product cards and checkout flow mocks.</p>
+              <a class="card-btn" href="#" target="_blank" rel="noopener">Live demo</a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <figure class="thumb">
+              <img src="https://images.unsplash.com/photo-1526378728827-3f1b1b8e1f2e?w=1200&q=60&auto=format&fit=crop" alt="Chat app screenshot">
+            </figure>
+            <div class="project-body">
+              <h3>ChatVerse App</h3>
+              <p class="muted">Realtime chat UI demo (design + interactions) with dark mode support.</p>
+              <a class="card-btn" href="#" target="_blank" rel="noopener">View project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="max-w contact-inner">
+        <h2 class="section-title">Let's Connect</h2>
+
+        <!-- contact form uses mailto so no JS required -->
+        <form class="contact-form" action="mailto:kamauezekiel53@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-row">
+            <input name="name" type="text" placeholder="Your name" required>
+            <input name="email" type="email" placeholder="Your email" required>
+          </div>
+          <textarea name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send email</button>
+            <a class="btn ghost" href="mailto:kamauezekiel53@gmail.com">Or open email</a>
+          </div>
+        </form>
+
+        <div class="socials">
+          <a class="social" href="https://github.com/kamauezekiel53-maker" target="_blank" rel="noopener" aria-label="GitHub">
+            <!-- simple GitHub SVG -->
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.75 5.4.75 11.75c0 4.85 3.14 8.97 7.5 10.43.55.1.75-.24.75-.54 0-.27-.01-1.17-.02-2.12-3.05.66-3.7-1.47-3.7-1.47-.5-1.28-1.22-1.62-1.22-1.62-.99-.68.08-.67.08-.67 1.1.08 1.68 1.13 1.68 1.13.97 1.66 2.55 1.18 3.17.9.1-.7.38-1.18.69-1.45-2.43-.28-4.98-1.22-4.98-5.43 0-1.2.43-2.18 1.12-2.95-.11-.28-.49-1.41.11-2.94 0 0 .92-.29 3.02 1.12a10.5 10.5 0 0 1 5.5 0c2.1-1.41 3.02-1.12 3.02-1.12.6 1.53.22 2.66.11 2.94.7.77 1.12 1.75 1.12 2.95 0 4.22-2.56 5.14-5 5.41.39.34.73 1.02.73 2.06 0 1.49-.01 2.69-.01 3.06 0 .3.2.65.76.54 4.36-1.46 7.5-5.58 7.5-10.43C23.25 5.4 18.35.5 12 .5z"/></svg>
+            <span>GitHub</span>
+          </a>
+
+          <a class="social" href="https://www.instagram.com/_ph_antom_knight" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3zm5 3.2A4.8 4.8 0 1 0 16.8 12 4.8 4.8 0 0 0 12 7.2zm0 2.2a2.6 2.6 0 1 1-2.6 2.6A2.6 2.6 0 0 1 12 9.4zM18.5 6.1a.9.9 0 1 0 .9.9.9.9 0 0 0-.9-.9z"/></svg>
+            <span>Instagram</span>
+          </a>
+
+          <a class="social" href="mailto:kamauezekiel53@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M2 6.5V18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6.5L12 11 2 6.5zm0-2L12 11l10-6.5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v.5z"/></svg>
+            <span>Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="max-w">
+        <p>© <span id="year"></span> Ezekiel — Built with ♥ HTML &amp; CSS</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- small inline script only to set the year (optional; can remove if you want pure HTML/CSS) -->
+  <script>
+    // This tiny line is optional. Remove script tag to keep the project strictly JS-free.
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+  </html> 
